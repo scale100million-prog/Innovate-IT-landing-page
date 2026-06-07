@@ -41,64 +41,65 @@ export function Hero({ onCtaClick }: HeroProps) {
   return (
     <section
       id="hero"
-      style={{ backgroundColor: '#0a0a0f' }}
+      style={{ backgroundColor: "#0a0a0f" }}
       className="relative w-full pt-0 pb-[20px] md:pb-[40px] flex flex-col items-center justify-start overflow-hidden text-center"
     >
       {/* Radial amber glow */}
       <div
         style={{
-          position: 'absolute',
+          position: "absolute",
           bottom: 0,
           right: 0,
-          width: '600px',
-          height: '600px',
-          background: 'radial-gradient(circle at bottom right, rgba(180,80,20,0.35) 0%, rgba(180,80,20,0) 70%)',
-          pointerEvents: 'none',
+          width: "600px",
+          height: "600px",
+          background:
+            "radial-gradient(circle at bottom right, rgba(180,80,20,0.35) 0%, rgba(180,80,20,0) 70%)",
+          pointerEvents: "none",
         }}
       />
 
       {/* QUALIFIER BAR */}
       <div
         style={{
-          display: 'block',
-          visibility: 'visible',
+          display: "block",
+          visibility: "visible",
           opacity: 1,
-          width: '100%',
-          position: 'relative',
+          width: "100%",
+          position: "relative",
           zIndex: 100,
-          marginTop: '12px',
-          marginBottom: '20px',
-          padding: '0 12px',
-          boxSizing: 'border-box' as const,
+          marginTop: "12px",
+          marginBottom: "20px",
+          padding: "0 12px",
+          boxSizing: "border-box",
         }}
       >
         <div
           style={{
-            backgroundColor: '#111111',
-            borderRadius: '8px',
-            padding: '10px 16px',
-            border: '1px solid rgba(255,255,255,0.08)',
-            display: 'block',
-            visibility: 'visible',
+            backgroundColor: "#111111",
+            borderRadius: "8px",
+            padding: "10px 16px",
+            border: "1px solid rgba(255,255,255,0.08)",
+            display: "block",
+            visibility: "visible",
             opacity: 1,
-            maxWidth: '860px',
-            margin: '0 auto',
+            maxWidth: "860px",
+            margin: "0 auto",
           }}
         >
           <p
             style={{
-              color: '#FFFFFF',
-              WebkitTextFillColor: '#FFFFFF',
-              fontSize: '12px',
-              textAlign: 'center' as const,
+              color: "#FFFFFF",
+              WebkitTextFillColor: "#FFFFFF",
+              fontSize: "12px",
+              textAlign: "center",
               margin: 0,
               padding: 0,
-              lineHeight: '1.5',
+              lineHeight: "1.5",
               fontWeight: 400,
-              display: 'block',
-              visibility: 'visible',
+              display: "block",
+              visibility: "visible",
               opacity: 1,
-              fontFamily: 'inherit',
+              fontFamily: "inherit",
             }}
           >
             {copyData.qualifier}
@@ -108,7 +109,7 @@ export function Hero({ onCtaClick }: HeroProps) {
 
       {/* Content */}
       <div
-        style={{ position: 'relative', zIndex: 10 }}
+        style={{ position: "relative", zIndex: 10 }}
         className="w-full max-w-[1100px] mt-0 px-4 md:px-[48px] flex flex-col items-center"
       >
         {/* Headline */}
@@ -127,13 +128,23 @@ export function Hero({ onCtaClick }: HeroProps) {
         {/* Subheadline */}
         <ScrollReveal delay={0.2}>
           <p className="mt-[12px] text-[13px] md:text-[16px] text-[#9090AA] leading-[1.5] md:leading-[1.65] max-w-[700px] mx-auto text-center">
-            {copyData.subheadline.includes("61 placements in the last 90 days.") ? (
+            {copyData.subheadline.includes(
+              "61 placements in the last 90 days."
+            ) ? (
               <>
-                {copyData.subheadline.split("61 placements in the last 90 days.")[0]}
+                {
+                  copyData.subheadline.split(
+                    "61 placements in the last 90 days."
+                  )[0]
+                }
                 <span className="text-[#F5A623] font-bold">
                   61 placements in the last 90 days.
                 </span>
-                {copyData.subheadline.split("61 placements in the last 90 days.")[1]}
+                {
+                  copyData.subheadline.split(
+                    "61 placements in the last 90 days."
+                  )[1]
+                }
               </>
             ) : (
               copyData.subheadline
@@ -146,18 +157,18 @@ export function Hero({ onCtaClick }: HeroProps) {
           <ScrollReveal delay={0.3} className="w-full">
             <div
               style={{
-                width: '100%',
-                aspectRatio: '16/9',
-                borderRadius: '20px',
-                border: '3px solid rgba(255,255,255,0.1)',
-                boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
-                backgroundColor: '#030305',
-                overflow: 'hidden',
-                position: 'relative',
+                width: "100%",
+                aspectRatio: "16/9",
+                borderRadius: "20px",
+                border: "3px solid rgba(255,255,255,0.1)",
+                boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
+                backgroundColor: "#030305",
+                overflow: "hidden",
+                position: "relative",
               }}
             >
               <div
-                style={{ width: '100%', height: '100%' }}
+                style={{ width: "100%", height: "100%" }}
                 dangerouslySetInnerHTML={{
                   __html: `<wistia-player media-id="0juowtrtun" aspect="1.7777777777777777" style="width:100%;height:100%;display:block;"></wistia-player>`,
                 }}
@@ -183,7 +194,6 @@ export function Hero({ onCtaClick }: HeroProps) {
             </a>
           </div>
         </ScrollReveal>
-
       </div>
     </section>
   );
