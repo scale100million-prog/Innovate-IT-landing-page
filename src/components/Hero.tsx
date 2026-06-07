@@ -44,7 +44,6 @@ export function Hero({ onCtaClick }: HeroProps) {
       style={{ backgroundColor: "#0a0a0f" }}
       className="relative w-full pt-0 pb-[20px] md:pb-[40px] flex flex-col items-center justify-start overflow-hidden text-center"
     >
-      {/* Radial amber glow */}
       <div
         style={{
           position: "absolute",
@@ -52,13 +51,11 @@ export function Hero({ onCtaClick }: HeroProps) {
           right: 0,
           width: "600px",
           height: "600px",
-          background:
-            "radial-gradient(circle at bottom right, rgba(180,80,20,0.35) 0%, rgba(180,80,20,0) 70%)",
+          background: "radial-gradient(circle at bottom right, rgba(180,80,20,0.35) 0%, rgba(180,80,20,0) 70%)",
           pointerEvents: "none",
         }}
       />
 
-      {/* QUALIFIER BAR */}
       <div
         style={{
           display: "block",
@@ -107,12 +104,10 @@ export function Hero({ onCtaClick }: HeroProps) {
         </div>
       </div>
 
-      {/* Content */}
       <div
         style={{ position: "relative", zIndex: 10 }}
         className="w-full max-w-[1100px] mt-0 px-4 md:px-[48px] flex flex-col items-center"
       >
-        {/* Headline */}
         <ScrollReveal delay={0.1}>
           <h1 className="mt-[14px] text-[18px] sm:text-[22px] md:text-[34px] lg:text-[38px] font-extrabold leading-[1.3] md:leading-[1.1] max-w-none md:max-w-[1000px] mx-auto tracking-tight select-none text-center">
             <span className="text-[#E8E8E8]">
@@ -125,26 +120,15 @@ export function Hero({ onCtaClick }: HeroProps) {
           </h1>
         </ScrollReveal>
 
-        {/* Subheadline */}
         <ScrollReveal delay={0.2}>
           <p className="mt-[12px] text-[13px] md:text-[16px] text-[#9090AA] leading-[1.5] md:leading-[1.65] max-w-[700px] mx-auto text-center">
-            {copyData.subheadline.includes(
-              "61 placements in the last 90 days."
-            ) ? (
+            {copyData.subheadline.includes("61 placements in the last 90 days.") ? (
               <>
-                {
-                  copyData.subheadline.split(
-                    "61 placements in the last 90 days."
-                  )[0]
-                }
+                {copyData.subheadline.split("61 placements in the last 90 days.")[0]}
                 <span className="text-[#F5A623] font-bold">
                   61 placements in the last 90 days.
                 </span>
-                {
-                  copyData.subheadline.split(
-                    "61 placements in the last 90 days."
-                  )[1]
-                }
+                {copyData.subheadline.split("61 placements in the last 90 days.")[1]}
               </>
             ) : (
               copyData.subheadline
@@ -152,7 +136,6 @@ export function Hero({ onCtaClick }: HeroProps) {
           </p>
         </ScrollReveal>
 
-        {/* VSL Video */}
         <div className="mt-[20px] md:mt-[32px] w-full max-w-[960px] flex flex-col items-center">
           <ScrollReveal delay={0.3} className="w-full">
             <div
@@ -177,7 +160,6 @@ export function Hero({ onCtaClick }: HeroProps) {
           </ScrollReveal>
         </div>
 
-        {/* CTA Button */}
         <ScrollReveal delay={0.5}>
           <div className="mt-[32px] w-full flex justify-center">
             
@@ -194,6 +176,7 @@ export function Hero({ onCtaClick }: HeroProps) {
             </a>
           </div>
         </ScrollReveal>
+
       </div>
     </section>
   );
