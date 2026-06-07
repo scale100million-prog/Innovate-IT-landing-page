@@ -1,0 +1,6 @@
+{
+  "name": "VSL Landing Page",
+  "description": "High-converting single-column VSL landing page for Indian F1 students in the US.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
