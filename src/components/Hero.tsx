@@ -69,7 +69,7 @@ export function Hero({ onCtaClick }: HeroProps) {
           marginTop: '12px',
           marginBottom: '20px',
           padding: '0 12px',
-          boxSizing: 'border-box',
+          boxSizing: 'border-box' as const,
         }}
       >
         <div
@@ -88,8 +88,9 @@ export function Hero({ onCtaClick }: HeroProps) {
           <p
             style={{
               color: '#FFFFFF',
+              WebkitTextFillColor: '#FFFFFF',
               fontSize: '12px',
-              textAlign: 'center',
+              textAlign: 'center' as const,
               margin: 0,
               padding: 0,
               lineHeight: '1.5',
