@@ -97,7 +97,7 @@ export function Hero({ onCtaClick }: HeroProps) {
               <div 
                 className="w-full h-full"
                 dangerouslySetInnerHTML={{ 
-                  __html: `<wistia-player media-id="zntvfnosjy" aspect="1.7777777777777777"></wistia-player>` 
+                  __html: `<wistia-player media-id="ly0ifsv3wn" aspect="1.7777777777777777"></wistia-player>` 
                 }} 
               />
             </div>

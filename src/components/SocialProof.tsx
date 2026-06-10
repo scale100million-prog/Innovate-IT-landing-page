@@ -32,7 +32,7 @@ const getStudentPhoto = (name: string) => {
     return "https://raw.githubusercontent.com/scale100million-prog/my-images/main/jessica.jpeg";
   }
   if (normName === "helsi" || normName === "hellsi") {
-    return "https://raw.githubusercontent.com/scale100million-prog/my-images/main/helsi.jpeg";
+    return "https://raw.githubusercontent.com/scale100million-prog/my-images/main/hiren.jfif";
   }
   if (normName === "happy") {
     return "https://raw.githubusercontent.com/scale100million-prog/my-images/main/happy.jpeg";
