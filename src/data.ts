@@ -22,8 +22,8 @@ export interface FAQItem {
 }
 
 export const HERO_DATA = {
-  qualifier: "For Indian F1 Students in the US Who Have Sent 100+ Applications and Still Don't Have an Offer Letter.",
-  headlineStart: "We Help Indian F1 Students in the US Get a W2 Job Offer in 45 Days ",
+  qualifier: "For Indian F1 OPT Students in the US Who Have Sent 100+ Applications and Still Don't Have an Offer Letter.",
+  headlineStart: "We Help Indian F1 OPT Students in the US Get a W2 Job Offer in 45 Days ",
   headlineHook: "by Taking Over Their Entire Job Search Resume, Applications, and Interview Prep — Until the Offer Letter Arrives.",
   subheadline: "Not a course. Not a template. A dedicated team running your entire job search every single day until the offer letter is in your hand. 61 placements in the last 90 days.",
   vslLabel: "How Indian F1 and STEM OPT Students Are Landing US Job Offers in 45 Days — Even With the Clock Running.",
